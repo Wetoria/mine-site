@@ -1,1 +1,1 @@
-# mini-sit
+# mini-site
