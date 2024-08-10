@@ -6,41 +6,38 @@ import type { DefaultTheme, LocaleSpecificConfig } from "vitepress";
 export const themeConfig: DefaultTheme.Config = {
     // REF https://vitepress.dev/reference/default-theme-config#docfooter
     docFooter: {
-      prev: "上一篇",
-      next: "下一篇",
+      prev: "Prev",
+      next: "Next",
     },
 
-    outlineTitle: "目录",
+    outlineTitle: "Outline",
 
     // REF https://vitepress.dev/reference/default-theme-config#lastupdatedtext
-    lastUpdatedText: "更新时间",
+    lastUpdatedText: "Last updated",
 
     // REF https://vitepress.dev/reference/default-theme-config#darkmodeswitchlabel
-    darkModeSwitchLabel: "深色主题",
+    darkModeSwitchLabel: "Dark",
 
     // REF https://vitepress.dev/reference/default-theme-config#sidebarmenulabel
-    sidebarMenuLabel: "列表",
-
-    // REF https://vitepress.dev/reference/default-theme-config#returntotoplabel
-    returnToTopLabel: "回到顶部",
+    sidebarMenuLabel: "List",
 
     // REF https://vitepress.dev/reference/default-theme-config#langmenulabel
-    langMenuLabel: "切换语言",
+    langMenuLabel: "Languages",
 
     // nav: [
     // ],
 
     sidebar: {
-      "/zh/articles/": [
-        ...postsSidebarWithLocale.zh,
+      "/en/articles/": [
+        ...postsSidebarWithLocale.en,
       ],
     },
 };
 
 export const localeConfig: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; link?: string } = {
-    label: "简体中文",
-    lang: "zh", // 设置 `<html>` 标签 lang 属性
-    dir: "/zh/",
+    label: "English",
+    lang: "en", // 设置 `<html>` 标签 lang 属性
+    dir: "/en/",
 
     themeConfig,
 };

@@ -43,14 +43,3 @@ features:
     link: /zh/siyuan/enhance/
 
 ---
-<!-- 
-<script setup>
-  const lang = navigator.language
-  const isChinese = lang.includes('zh')
-  if (isChinese) {
-    location.replace('/zh/')
-  } else {
-    location.replace('/en/')
-  }
-</script>
- -->

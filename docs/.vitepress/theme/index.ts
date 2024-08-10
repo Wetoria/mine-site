@@ -5,7 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
 // @ts-expect-error 类型 “ImportMeta” 上不存在属性 “glob”
-const modules = import.meta.glob("./../components/**/*.vue", { eager: true });
+const modules = import.meta.glob("./../../../components/**/*.vue", { eager: true });
 
 export default {
   extends: DefaultTheme,

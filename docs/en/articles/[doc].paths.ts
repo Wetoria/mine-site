@@ -1,0 +1,14 @@
+import { posts } from '../../../components/Forward/DocData';
+
+export default {
+    paths() {
+        const results = posts.filter((i) => i.locale === 'en').map((item) => ({
+            params: {
+                doc: item.filenameWithoutLocale,
+                ...item,
+            },
+        }));
+        console.log('results is ', results)
+        return results;
+    },
+};
