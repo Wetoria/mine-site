@@ -1,4 +1,9 @@
 {
+  "name": "wetoria-site",
+  "type": "module",
+  "description": "Wetoria's private site.",
+  "author": "Wetoria/Vip",
+  "homepage": "https://wetoria.me",
   "devDependencies": {
     "@types/node": "^22.2.0",
     "gray-matter": "^4.0.3",
