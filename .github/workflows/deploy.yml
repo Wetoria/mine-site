@@ -39,6 +39,10 @@ jobs:
           cache: pnpm
       - name: Install pnpm
         run: npm install -g pnpm
+      - name: Verify pnpm installation
+        run: |
+          which pnpm
+          pnpm --version
       - name: Install dependencies
         run: pnpm install
       - name: Build with VitePress
