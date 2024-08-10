@@ -8,7 +8,6 @@ export default {
                 ...item,
             },
         }));
-        console.log('results is ', results)
         return results;
     },
 };

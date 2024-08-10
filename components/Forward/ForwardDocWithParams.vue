@@ -8,7 +8,6 @@ const { params } = useData();
 
 const targetPost = ref(posts.find((post) => post.url.replace(".html", "") === params.value.filePath.replace(".md", "")) || {});
 
-console.log('posts is ', posts, targetPost.value, params.value)
 </script>
 
 <template>

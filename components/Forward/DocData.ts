@@ -60,7 +60,7 @@ function getSidebar(): IDocData[] {
                     .replace("/", "");
                 const member = memberInPath;
 
-                const isIntro = finalPath.includes("contents/index");
+                const isIntro = finalPath.includes("articles/index");
                 results.push({
                     text: data.title || firstLineOfContent,
                     title: data.title || firstLineOfContent,
@@ -118,3 +118,9 @@ locales.forEach((locale) => {
     }));
 });
 
+
+console.log('posts is ', posts);
+
+console.log('postsSidebar is ', postsSidebar)
+
+console.log('postsSidebarWithLocale is ', postsSidebarWithLocale)

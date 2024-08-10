@@ -8,7 +8,6 @@ export default {
                 ...item,
             },
         }));
-        console.log('posts is ', posts)
         return results;
     },
 };
