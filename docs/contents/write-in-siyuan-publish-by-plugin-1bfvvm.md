@@ -12,4 +12,30 @@ next: false
 
 Test write in siyuan, publish by plugin.
 
-​![image](https://raw.githubusercontent.com/Wetoria/mine-site/main/images/image-20240810192338-h1ztfmk.png)​
+​![image](assets/image-20240810192338-h1ztfmk.png)​
+
+‍
+
+这是一段测试文本
+
+‍
+
+> 这是一段测试文本
+
+这是一段测试文本
+
+这是一段测试文本
+
+‍
+
+* 这是一段测试文本
+* 这是一段测试文本
+
+  * 这是一段测试文本
+
+‍
+
+1. 这是一段测试文本
+2. 这是一段测试文本
+
+    1. 这是一段测试文本
