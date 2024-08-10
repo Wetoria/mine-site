@@ -5,5 +5,3 @@ cache
 # feishu
 **/feishu/docs.json
 **/feishu/.cache
-
-*-lock.yaml
