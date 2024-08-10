@@ -11,8 +11,12 @@ onMounted(() => {
     const doms = docContainerRef.value.querySelectorAll("[src]");
 
     doms.forEach((dom) => {
-        const originSrc = dom.getAttribute("src");
+        const originSrc = dom.getAttribute("src") as string;
 
+        const startsWithHttp = originSrc.startsWith('http')
+        if (startsWithHttp) {
+          return
+        }
         dom.setAttribute("src", import.meta.env.DEV ? `./assets${originSrc.split("assets").pop()}` : `/assets${originSrc.split("assets").pop()}`);
     });
 });
