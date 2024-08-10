@@ -5,7 +5,6 @@
   "author": "Wetoria/Vip",
   "homepage": "https://wetoria.me",
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.1",
     "@types/node": "^22.2.0",
     "eslint": "^9.8.0",
     "eslint-plugin-format": "^0.1.2",
