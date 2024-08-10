@@ -1,3 +1,7 @@
 node_modules
 
 cache
+
+# feishu
+docs/contents/feishu/docs.json
+docs/contents/feishu/.cache

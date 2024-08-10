@@ -5,7 +5,11 @@
   "author": "Wetoria/Vip",
   "homepage": "https://wetoria.me",
   "devDependencies": {
+    "@antfu/eslint-config": "^2.24.1",
     "@types/node": "^22.2.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-format": "^0.1.2",
+    "eslint-plugin-tsdoc": "^0.3.0",
     "gray-matter": "^4.0.3",
     "sass-embedded": "^1.77.8",
     "vitepress": "^1.3.2",
