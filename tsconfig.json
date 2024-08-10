@@ -12,13 +12,12 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./docs/*"]
     }
   },
   "include": [
-    "docs/**/*.ts",
-    "docs/**/*.d.ts",
-    "docs/**/*.vue",
+    "./**/*.ts",
+    "./**/*.d.ts",
+    "./**/*.vue",
   ],
   "exclude": [
     "node_modules",
