@@ -3,10 +3,7 @@ layout: doc
 lastUpdated: false
 ---
 
-<style lang="scss">
-  h1,h2,h3,h4,h5,h6 {
-    color: var(--vip-sky-blue);
-  }
+<style lang="scss" scoped>
 
   img {
     margin: 0 auto;

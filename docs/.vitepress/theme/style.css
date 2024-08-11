@@ -145,6 +145,10 @@
   --vip-gap: 8px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  color: var(--vip-sky-blue);
+}
+
 .VipColor,
 .vip_color {
   color: var(--vip-sky-blue);
