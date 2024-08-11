@@ -137,13 +137,41 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/*  #region my-style */
+
+:root {
+  --vip-sky-blue: #00bfff;
+  --vip-sky-blue-blur: #00bfff7F;
+  --vip-gap: 8px;
+}
+
+.VipColor,
+.vip_color {
+  color: var(--vip-sky-blue);
+  font-weight: bold;
+}
+
+.vip_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /**
  * content width calc as 580px
 */
-.Col2 {
+.VipCol {
+  --vip-base-doc-width: 580px;
+  --vip-col-count: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--vip-base-doc-width) / var(--vip-col-count)), 1fr));
+  gap: 24px;
+}
+.VipCol2 {
+  --vip-col-count: 2;
+}
+.VipCol3 {
+  --vip-col-count: 3;
 }
 
 .v-highlight {
@@ -157,4 +185,6 @@
   background-clip: text;
   -webkit-text-fill-color: var(--vp-home-hero-name-color);
 }
+
+/* #endregion my-style */
 
