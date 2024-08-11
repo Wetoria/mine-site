@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template>
     <Forward-Doc
-        :member="$params.member"
+      :params="$params"
     >
         <div v-html="targetPost.html" />
     </Forward-Doc>

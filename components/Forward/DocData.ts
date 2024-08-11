@@ -12,6 +12,7 @@ export interface IDocData {
     filename: string;
     filenameWithoutLocale: string;
     filePath: string;
+    dir: string;
     link: string;
     order?: number;
     locale?: string;
@@ -55,7 +56,8 @@ function getSidebar(): IDocData[] {
                 const finalPath = `/${localeMap[finalLocale]}/articles/${baseName.replace(new RegExp(`-(${locales.join("|")})$`), "")}`;
 
                 const firstLineOfContent = getTitleFromContent(content);
-                const memberInPath = filePath.replace(`${directoryPath}/`, "")
+                const originFilePath = filePath.replace(`${directoryPath}/`, "")
+                const memberInPath = originFilePath
                     .replace(`${file}`, "")
                     .replace("/", "");
                 const member = memberInPath;
@@ -66,6 +68,7 @@ function getSidebar(): IDocData[] {
                     title: data.title || firstLineOfContent,
                     filename: baseName,
                     filePath: `/articles/${filePath.replace(`${directoryPath}/`, "")}`,
+                    dir: `/contents/${originFilePath.replace(`${baseName}.md`, '')}`,
                     member,
                     order: data.order,
                     link: isIntro ? finalPath.replace("index", "") : finalPath,

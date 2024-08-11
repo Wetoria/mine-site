@@ -2,8 +2,7 @@
 import { onMounted, ref } from "vue";
 
 const props = defineProps<{
-    member: string;
-    filename?: string;
+    params?: any;
 }>();
 
 const docContainerRef = ref();
@@ -17,7 +16,11 @@ onMounted(() => {
         if (startsWithHttp) {
           return
         }
-        dom.setAttribute("src", import.meta.env.DEV ? `./assets${originSrc.split("assets").pop()}` : `/assets${originSrc.split("assets").pop()}`);
+
+        const isDev = import.meta.env.DEV
+
+        const assetsPath = isDev ? `${props.params.dir}/assets${originSrc.split("assets").pop()}` : `/assets${originSrc.split("assets").pop()}`
+        dom.setAttribute("src", assetsPath);
     });
 });
 </script>
