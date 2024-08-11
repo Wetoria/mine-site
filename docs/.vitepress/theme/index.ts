@@ -6,6 +6,8 @@ import './style.css'
 import VLastupdated from '../../../components/Layout/VLastupdated.vue';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
+import mediumZoom from 'medium-zoom';
+import { onMounted, watch, nextTick } from 'vue';
 
 // @ts-expect-error 类型 “ImportMeta” 上不存在属性 “glob”
 const modules = import.meta.glob("./../../../components/**/*.vue", { eager: true });
@@ -79,5 +81,19 @@ export default {
       //您可以使用“comment:true”序言在页面上单独启用它
       true
     );
+
+    // #region 图片缩放
+    const initZoom = () => {
+      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
+      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+    };
+    onMounted(() => {
+      initZoom();
+    });
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom())
+    );
+    // #endregion 图片缩放
   },
 } satisfies Theme

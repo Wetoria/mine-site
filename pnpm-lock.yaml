@@ -28,6 +28,9 @@ devDependencies:
   gray-matter:
     specifier: ^4.0.3
     version: registry.npmmirror.com/gray-matter@4.0.3
+  medium-zoom:
+    specifier: ^1.1.0
+    version: registry.npmmirror.com/medium-zoom@1.1.0
   sass-embedded:
     specifier: ^1.77.8
     version: registry.npmmirror.com/sass-embedded@1.77.8
@@ -2039,6 +2042,12 @@ packages:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==, tarball: https://registry.npmmirror.com/mark.js/-/mark.js-8.11.1.tgz}
     name: mark.js
     version: 8.11.1
+    dev: true
+
+  registry.npmmirror.com/medium-zoom@1.1.0:
+    resolution: {integrity: sha512-ewyDsp7k4InCUp3jRmwHBRFGyjBimKps/AJLjRSox+2q/2H4p/PNpQf+pwONWlJiOudkBXtbdmVbFjqyybfTmQ==, tarball: https://registry.npmmirror.com/medium-zoom/-/medium-zoom-1.1.0.tgz}
+    name: medium-zoom
+    version: 1.1.0
     dev: true
 
   registry.npmmirror.com/minimatch@3.1.2:
