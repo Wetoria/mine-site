@@ -12,7 +12,7 @@ next: false
 
 Test write in siyuan, publish by plugin.
 
-​![image](assets/image-20240810192338-h1ztfmk.png)​
+​![image](https://raw.githubusercontent.com/Wetoria/mine-site/main/docs/contents/siyuan/assets/image-20240810192338-h1ztfmk.png)​
 
 ‍
 
