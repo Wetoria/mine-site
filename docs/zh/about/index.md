@@ -1,7 +1,6 @@
 ---
 layout: doc
 lastUpdated: false
-comment: false
 ---
 
 <style lang="scss" scoped>
