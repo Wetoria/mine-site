@@ -10,6 +10,8 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
+    outline: 'deep',
+
     nav: [
       { text: 'Home', link: '/zh/' },
       { text: 'About Me', link: '/zh/about/' },

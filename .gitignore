@@ -4,6 +4,8 @@ cache
 
 dist
 
+.DS_Store
+
 # feishu
 **/feishu/docs.json
 **/feishu/.cache
