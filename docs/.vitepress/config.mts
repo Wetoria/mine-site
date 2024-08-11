@@ -9,6 +9,8 @@ export default defineConfig({
   appearance: 'dark',
   cleanUrls: true,
 
+  lastUpdated: true,
+
   themeConfig: {
     outline: 'deep',
 
