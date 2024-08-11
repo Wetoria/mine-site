@@ -9,7 +9,7 @@ const { params } = useData();
 const targetPost = ref(posts.find((post) => post.url.replace(".html", "").replace(/^\/contents/, '') === params.value.filePath.replace(".md", "").replace(/^\/articles/, '')) || {});
 
 onMounted(() => {
-  document.title = `Wetoria - ${params.value.title}`
+  document.title = `𝓦𝓮𝓽𝓸𝓻𝓲𝓪 - ${params.value.title}`
 })
 </script>
 

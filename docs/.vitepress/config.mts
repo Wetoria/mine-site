@@ -4,7 +4,7 @@ import en from './configs/en';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Wetoria",
+  title: "𝓦𝓮𝓽𝓸𝓻𝓲𝓪",
   description: "👋 Hi there, I am Vip. I'm using siyuan-note to log my LifeLog and as my secondary brain.",
   appearance: 'dark',
   cleanUrls: true,
