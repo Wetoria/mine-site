@@ -1,5 +1,6 @@
-<ClientOnly>
 <script setup>
-location.replace('https://sfe.wiki')
+  import { onMounted } from 'vue'
+  onMounted(() => {
+    location.replace('https://sfe.wiki')
+  })
 </script>
-</ClientOnly>
