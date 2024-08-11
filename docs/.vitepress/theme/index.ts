@@ -4,6 +4,8 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import VLastupdated from '../../../components/Layout/VLastupdated.vue';
+import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import { useData, useRoute } from 'vitepress';
 
 // @ts-expect-error 类型 “ImportMeta” 上不存在属性 “glob”
 const modules = import.meta.glob("./../../../components/**/*.vue", { eager: true });
@@ -47,5 +49,35 @@ export default {
         const moduleName = paths[paths.length - 1].replace(".vue", "");
         app.component(moduleName, mod.default);
       }
-  }
+  },
+  setup() {
+    // Get frontmatter and route
+    const { frontmatter } = useData();
+    const route = useRoute();
+
+    const {
+      VITE_giscus_repoId,
+      VITE_giscus_categoryId,
+    } = import.meta.env;
+
+    // giscus配置
+    giscusTalk(
+      {
+        repo: 'Wetoria/my-site',
+        repoId: VITE_giscus_repoId,
+        category: 'Announcements',
+        categoryId: VITE_giscus_categoryId,
+        mapping: 'pathname',
+        inputPosition: 'top',
+        lang: 'zh-CN',
+      },
+      {
+        frontmatter, route
+      },
+      //默认值为true，表示已启用，此参数可以忽略；
+      //如果为false，则表示未启用
+      //您可以使用“comment:true”序言在页面上单独启用它
+      true
+    );
+  },
 } satisfies Theme
