@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "𝓦𝓮𝓽𝓸𝓻𝓲𝓪"
-  text: "𝓗𝓲 𝓽𝓱𝓮𝓻, 𝓘 𝓪𝓶 𝓥𝓲𝓹."
+  text: "𝓗𝓲 𝓽𝓱𝓮𝓻𝓮, 𝓘 𝓪𝓶 𝓥𝓲𝓹."
   actions:
     - theme: brand
       text: Simplest Study
