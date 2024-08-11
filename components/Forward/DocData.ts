@@ -122,8 +122,8 @@ locales.forEach((locale) => {
 });
 
 
-console.log('posts is ', posts);
+// console.log('posts is ', posts);
 
-console.log('postsSidebar is ', postsSidebar)
+// console.log('postsSidebar is ', postsSidebar)
 
-console.log('postsSidebarWithLocale is ', postsSidebarWithLocale)
+// console.log('postsSidebarWithLocale is ', postsSidebarWithLocale)

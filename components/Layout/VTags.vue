@@ -17,8 +17,6 @@ const props = defineProps<{
   tags: string[] | Array<{ text: string, type: keyof TagType}>
 }>()
 
-console.log('tags is ', props.tags, Object.keys(TagType))
-
 const typeList = ref<Array<{
   backgroundColor: string
   color: string
