@@ -17,7 +17,7 @@
   "include": [
     "./**/*.ts",
     "./**/*.d.ts",
-    "./**/*.vue",
+    ".**/*.vue",
   ],
   "exclude": [
     "node_modules",
