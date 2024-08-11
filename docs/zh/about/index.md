@@ -17,14 +17,6 @@ lastUpdated: false
     
   }
 
-  .VipCol {
-    h2, h3 {
-      margin-top: unset;
-      border-top: unset;
-      padding-top: unset;
-    }
-  }
-
   @media (max-width: 400px) { /* 调整屏幕尺寸临界点为实际需求 */
     .HeadAndInfo {
       grid-template-columns: 1fr; /* 切换为单列布局 */
@@ -46,7 +38,7 @@ lastUpdated: false
 
 ---
 
-<div class="HeadAndInfo">
+<div class="VipCol HeadAndInfo">
 
   <div>
     <img src="/favicon.ico" />

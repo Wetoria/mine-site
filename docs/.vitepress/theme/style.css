@@ -171,6 +171,14 @@ h1,h2,h3,h4,h5,h6 {
   grid-template-columns: repeat(auto-fill, minmax(calc(var(--vip-base-doc-width) / var(--vip-col-count)), 1fr));
   gap: 24px;
 }
+
+.VipCol {
+  h2, h3, h4, h5, h6 {
+    margin-top: unset;
+    border-top: unset;
+    padding-top: unset;
+  }
+}
 .VipCol2 {
   --vip-col-count: 2;
 }
