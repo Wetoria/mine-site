@@ -7,7 +7,6 @@ export default defineConfig({
   title: "𝓦𝓮𝓽𝓸𝓻𝓲𝓪",
   description: "👋 Hi there, I am Vip. I'm using siyuan-note to log my LifeLog and as my secondary brain.",
   appearance: 'dark',
-  cleanUrls: true,
 
   lastUpdated: true,
 
